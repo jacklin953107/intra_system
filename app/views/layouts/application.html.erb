@@ -16,7 +16,7 @@
       <%= alert %>
   <% end %>
   <% if current_user %>
-      Hi, <%= current_user.email %>
+      你好, <%= current_user.name %>
       <%= link_to('登出', destroy_user_session_path, method: :delete) %> |
       <%= link_to('修改密碼', edit_user_registration_path) %>
   <% else %>
